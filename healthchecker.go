@@ -53,7 +53,7 @@ func SetRunSuiteEvery(waitTime time.Duration) DBHealthCheckerOption {
 	}
 }
 
-func (h *DBHealthChecker) AddHealthChecker(healthChecks ...HealthCheck) {
+func (h *DBHealthChecker) Add(healthChecks ...HealthCheck) {
 	h.healthChecks = append(h.healthChecks, healthChecks...)
 }
 
